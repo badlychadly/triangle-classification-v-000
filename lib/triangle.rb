@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   attr_accessor :a, :b, :c
 
@@ -29,6 +30,7 @@ class Triangle
       :isosceles
     elsif self.arr.size == 3
       :scalene
+      binding.pry
     end
   end
 end
