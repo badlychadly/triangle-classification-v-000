@@ -23,27 +23,17 @@ class Triangle
 
   def kind
     if self.zero? || self.invalid?
-      begin
         raise TriangleError
-      rescue TriangleError.message
-
-      end
     elsif self.arr.size == 1
       :equilateral
     elsif self.arr.size == 2
       :isosceles
     elsif self.arr.size == 3
       :scalene
-      # binding.pry
     end
   end
 end
 
   class TriangleError < StandardError
-    def message
-      "you fucked up buddy"
-    end
   end
 
-  n = Triangle.new(0, 0, 0)
-  n.kind
