@@ -35,4 +35,4 @@ end
 
   class TriangleError < StandardError
   end
-puts Triangle => "n"
+puts Triangle.new(4,6,7)
