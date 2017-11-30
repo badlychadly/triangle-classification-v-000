@@ -24,6 +24,7 @@ class Triangle
   def kind
     if self.zero? || self.invalid?
         raise TriangleError
+      rescue TriangleError
     elsif self.arr.size == 1
       :equilateral
     elsif self.arr.size == 2
