@@ -26,6 +26,7 @@ class Triangle
       begin
         raise TriangleError
       rescue TriangleError
+        puts "not today buddy"
       end
     elsif self.arr.size == 1
       :equilateral
