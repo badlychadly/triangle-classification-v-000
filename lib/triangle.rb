@@ -30,10 +30,13 @@ class Triangle
       :isosceles
     elsif self.arr.size == 3
       :scalene
-      binding.pry
+      # binding.pry
     end
   end
 end
 
   class TriangleError < StandardError
   end
+
+  n = Triangle.new(0, 0, 0)
+  n.kind 
