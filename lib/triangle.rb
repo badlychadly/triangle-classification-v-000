@@ -25,6 +25,7 @@ class Triangle
     if self.zero? || self.invalid?
         raise TriangleError
       rescue TriangleError
+      end
     elsif self.arr.size == 1
       :equilateral
     elsif self.arr.size == 2
@@ -40,4 +41,4 @@ end
   end
 
   n = Triangle.new(0, 0, 0)
-  n.kind 
+  n.kind
