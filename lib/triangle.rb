@@ -23,6 +23,7 @@ class Triangle
 
   def kind
     if self.zero? || self.invalid?
+      begin
         raise TriangleError
       rescue TriangleError
       end
