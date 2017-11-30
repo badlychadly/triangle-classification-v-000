@@ -25,8 +25,8 @@ class Triangle
     if self.zero? || self.invalid?
       begin
         raise TriangleError
-      rescue TriangleError
-        puts "not today buddy"
+      rescue TriangleError => error
+        puts error.message
       end
     elsif self.arr.size == 1
       :equilateral
@@ -40,6 +40,9 @@ class Triangle
 end
 
   class TriangleError < StandardError
+    def message
+      "you fucked up buddy"
+    end
   end
 
   n = Triangle.new(0, 0, 0)
