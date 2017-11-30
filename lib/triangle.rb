@@ -25,8 +25,8 @@ class Triangle
     if self.zero? || self.invalid?
       begin
         raise TriangleError
-      rescue TriangleError 
-        
+      rescue TriangleError.message
+
       end
     elsif self.arr.size == 1
       :equilateral
