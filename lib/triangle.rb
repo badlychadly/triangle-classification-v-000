@@ -35,3 +35,4 @@ end
 
   class TriangleError < StandardError
   end
+puts Triangle => n
